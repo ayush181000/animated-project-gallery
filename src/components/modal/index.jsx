@@ -7,7 +7,7 @@ const index = ({ projects, modal }) => {
 
   return (
     <div className={styles.modalContainer}>
-      <div className={styles.modalSlider}>
+      <div style={{ top: index * -100 + '%' }} className={styles.modalSlider}>
         {projects.map((project, index) => {
           const { src, color, title } = project;
           return (

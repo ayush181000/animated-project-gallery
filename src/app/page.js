@@ -39,7 +39,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.body}>
         {projects.map((project, index) => {
-          return <Project key={index} project={project} setModal={setModal} />
+          return <Project key={index} index={index} project={project} setModal={setModal} />
         })}
       </div>
       <Modal projects={projects} modal={modal} />
