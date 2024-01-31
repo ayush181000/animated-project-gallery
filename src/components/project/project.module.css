@@ -1,0 +1,22 @@
+.project {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px 50px 100px;
+  border-top: 1px solid rgb(201, 201, 201);
+  cursor: pointer;
+}
+
+.project :last-of-type {
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.project h2 {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.project p {
+  font-weight: 300;
+}
