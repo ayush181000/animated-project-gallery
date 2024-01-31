@@ -1,0 +1,27 @@
+.modalContainer {
+  height: 350px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+}
+
+.modalSlider {
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+}
+
+.modal {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  height: auto;
+}

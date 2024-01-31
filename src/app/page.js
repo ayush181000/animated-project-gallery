@@ -1,5 +1,8 @@
+'use client'
+import { useState } from "react";
 import styles from './page.module.css';
 import Project from '../components/project/index';
+import Modal from '../components/modal/index';
 
 export default function Home() {
 
@@ -30,13 +33,16 @@ export default function Home() {
     }
   ];
 
+  const [modal, setModal] = useState({ active: false, index: 0 });
+
   return (
     <main className={styles.main}>
       <div className={styles.body}>
         {projects.map((project, index) => {
-          return <Project key={index} project={project} />
+          return <Project key={index} project={project} setModal={setModal} />
         })}
       </div>
+      <Modal projects={projects} modal={modal} />
 
     </main>
   );
