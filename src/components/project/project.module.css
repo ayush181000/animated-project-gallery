@@ -34,4 +34,5 @@
 .project p {
   transition: all 0.4s;
   font-weight: 300;
+  text-align: end;
 }
